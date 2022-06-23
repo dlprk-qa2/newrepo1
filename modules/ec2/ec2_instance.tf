@@ -10,7 +10,7 @@ data "aws_ssm_parameter" "amazon_linux_ami" {
   count                     = var.infra_type == "compliant" ? var.var_count : 0
   name                      = "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
 }
-
+#test
 #Create a role
 resource "aws_iam_role" "ec2_iam_role" {
   count                     = var.infra_type == "compliant" ? var.var_count : 0
