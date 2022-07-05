@@ -51,3 +51,4 @@ resource "aws_instance" "compliant_ec2_instance" {
   associate_public_ip_address = true
   tags                      = {Name = "${var.env_name}-${var.infra_type}-instance-${count.index + 1}"}
 }
+#test
